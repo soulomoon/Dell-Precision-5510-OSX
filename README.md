@@ -5,7 +5,7 @@ This repo is based on
 [darkhand's old README.md](https://github.com/soulomoon/XPS15-9550-Sierra)  
 # Installation(redo before every update)
 Add the node under to the CLOVER/config.plist/Devices(Enable it to boot)
-```
+```XML
  <key>FakeID</key>
  <dict>
      <key>IntelGFX</key>
@@ -17,7 +17,7 @@ Add the node under to the CLOVER/config.plist/Devices(Enable it to boot)
 copy `AfterInstallation/MoreKexts-LE` to `/Library/Extensions/`  
 run `AfterInstallation/MoreKexts-LE/VoodooPS2Daemon/_install.command`  
 then run command to rebuild the whole kextcache  
-```
+```shell
 sudo rm -rf /System/Library/Caches/com.apple.kext.caches/Startup/kernelcache
 sudo rm -rf /System/Library/PrelinkedKernels/prelinkedkernel
 sudo touch /System/Library/Extensions && sudo kextcache -u /
@@ -25,7 +25,7 @@ sudo touch /System/Library/Extensions && sudo kextcache -u /
 
 ## To enable 4K display with HD530(redo after every update)
 run command   
-```
+```shell
 sudo perl -i.bak -pe 's|\xB8\x01\x00\x00\x00\xF6\xC1\x01\x0F\x85|\x33\xC0\x90\x90\x90\x90\x90\x90\x90\xE9|sg' /System/Library/Frameworks/CoreDisplay.framework/Versions/Current/CoreDisplay
 sudo codesign -f -s - /System/Library/Frameworks/CoreDisplay.framework/Versions/Current/CoreDisplay
 ```
@@ -36,5 +36,7 @@ modify
 to be the same as  
 `AfterInstallation/Mac-A5C67F76ED83108C.plist`  
 run command to rebuild kextcache  
-`sudo touch /System/Library/Extensions && sudo kextcache -u /`
+```shell
+sudo touch /System/Library/Extensions && sudo kextcache -u /
+```
 
