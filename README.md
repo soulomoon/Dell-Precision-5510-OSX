@@ -23,7 +23,7 @@ sudo rm -rf /System/Library/PrelinkedKernels/prelinkedkernel
 sudo touch /System/Library/Extensions && sudo kextcache -u /
 ```
 
-## To enable 4K display with hd530(redo after every update)
+## To enable 4K display with HD530(redo after every update)
 run command   
 ```
 sudo perl -i.bak -pe 's|\xB8\x01\x00\x00\x00\xF6\xC1\x01\x0F\x85|\x33\xC0\x90\x90\x90\x90\x90\x90\x90\xE9|sg' /System/Library/Frameworks/CoreDisplay.framework/Versions/Current/CoreDisplay
