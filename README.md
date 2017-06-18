@@ -10,7 +10,17 @@ Add the node under to the CLOVER/config.plist/Devices(4k needed)
  </dict>
 ```
 # AfterInstallation
-* to enable 4K display with hd530
+* More kext
+copy `AfterInstallation/MoreKexts-LE` to `/Library/Extensions/`
+run `AfterInstallation/MoreKexts-LE/VoodooPS2Daemon/_install.command`
+then run command to rebuild the whole kextcache
+```
+sudo rm -rf /System/Library/Caches/com.apple.kext.caches/Startup/kernelcache
+sudo rm -rf /System/Library/PrelinkedKernels/prelinkedkernel
+sudo touch /System/Library/Extensions && sudo kextcache -u /
+```
+
+* To enable 4K display with hd530
 run command 
 ```
 sudo perl -i.bak -pe 's|\xB8\x01\x00\x00\x00\xF6\xC1\x01\x0F\x85|\x33\xC0\x90\x90\x90\x90\x90\x90\x90\xE9|sg' /System/Library/Frameworks/CoreDisplay.framework/Versions/Current/CoreDisplay
