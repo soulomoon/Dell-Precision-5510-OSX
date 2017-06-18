@@ -3,7 +3,7 @@ Dell-Precision-5510 i7-6820HQ HD530 16G-DDR4 4k-Screen Sata3-SSD-512G DELL-DW156
 This repo is based on
 [darkhand repo](https://github.com/darkhandz/XPS15-9550-Sierra)  
 [darkhand's old README.md](https://github.com/soulomoon/XPS15-9550-Sierra)  
-# Installation
+# Installation(redo before very update)
 Add the node under to the CLOVER/config.plist/Devices(Enable it to boot)
 ```
  <key>FakeID</key>
@@ -23,7 +23,7 @@ sudo rm -rf /System/Library/PrelinkedKernels/prelinkedkernel
 sudo touch /System/Library/Extensions && sudo kextcache -u /
 ```
 
-## To enable 4K display with hd530
+## To enable 4K display with hd530(redo after very update)
 run command   
 ```
 sudo perl -i.bak -pe 's|\xB8\x01\x00\x00\x00\xF6\xC1\x01\x0F\x85|\x33\xC0\x90\x90\x90\x90\x90\x90\x90\xE9|sg' /System/Library/Frameworks/CoreDisplay.framework/Versions/Current/CoreDisplay
