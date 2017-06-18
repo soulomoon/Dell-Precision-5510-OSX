@@ -1,5 +1,7 @@
 # dell-5510-OSX
-MacOS clover boot
+MacOS clover boot  
+Based on [darkhand repo](https://github.com/darkhandz/XPS15-9550-Sierra) installation  
+[darkhand's old README.md](https://github.com/soulomoon/XPS15-9550-Sierra)  
 # Installation
 Add the node under to the CLOVER/config.plist/Devices(4k needed)
 ```
