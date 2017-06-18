@@ -15,7 +15,10 @@ Add the node under to the CLOVER/config.plist/Devices(Enable it to boot)
 # AfterInstallation
 ## More kext
 copy `AfterInstallation/MoreKexts-LE` to `/Library/Extensions/`  
-run `AfterInstallation/MoreKexts-LE/VoodooPS2Daemon/_install.command`  
+run 
+```shell
+AfterInstallation/MoreKexts-LE/VoodooPS2Daemon/_install.command
+```  
 then run command to rebuild the whole kextcache  
 ```shell
 sudo rm -rf /System/Library/Caches/com.apple.kext.caches/Startup/kernelcache
@@ -33,7 +36,7 @@ remove /CLOVER/config.plist/Devices/FakeId to unlimit hd530 graphic memory
 ## To better HWP configuration(you should root to do it)
 modify  
 `/System/Library/Extensions/IOPlatformPluginFamily.kext/Contents/PlugIns/X86PlatformPlugin.kext/Contents/Resources/Mac-A5C67F76ED83108C.plist`
-to be the same as  
+to be the same as   
 `AfterInstallation/Mac-A5C67F76ED83108C.plist`  
 run command to rebuild kextcache  
 ```shell
