@@ -43,3 +43,10 @@ to be the same as
 sudo touch /System/Library/Extensions && sudo kextcache -u /
 ```
 
+## BackLight Saving
+see  
+[Laptop backlight control using AppleBacklightInjector.kext](https://www.tonymacx86.com/threads/guide-laptop-backlight-control-using-applebacklightinjector-kext.218222/)    
+**Saving and restoring backlight level across restarts**  
+set `config.plist/SystemParameters/BacklightLevel=0`  
+to prevent clover insert default value, so you can save yours
+
