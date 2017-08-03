@@ -26,6 +26,13 @@ sudo rm -rf /System/Library/PrelinkedKernels/prelinkedkernel
 sudo touch /System/Library/Extensions && sudo kextcache -u /
 ```
 
+## Enable HDMI  
+adding node under /System/Library/Extensions/AppleGraphicsControl.kext/Contents/PlugIns/AppleGraphicsDevicePolicy.kext/Contents/Info.plist/Information Property List/IOKitpersonalities/AppleGraghicsDevicePolicy/ConfigMap  
+```XML
+<key>Mac-A5C67F76ED83108C</key>
+<string>none</string>
+
+```
 ## To enable 4K display with HD530(redo after every update)
 * run command   
 ```shell
