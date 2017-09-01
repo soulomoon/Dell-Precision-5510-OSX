@@ -2,7 +2,7 @@
 * Dell-Precision-5510 i7-6820HQ HD530 16G-DDR4 4k-Screen Sata3-SSD-512G DELL-DW1560  
 * This repo is based on
 [darkhand repo](https://github.com/darkhandz/XPS15-9550-Sierra)  
-* [darkhand's old README.md](https://github.com/soulomoon/XPS15-9550-Sierra)  
+* [darkhand's old README.md](https://github.com/darkhandz/XPS15-9550-Sierra/tree/fffd216d05be57256c2aac7ddafacb343bad0e69)  
 # Installation(redo before every update)
 * Add the node under to the CLOVER/config.plist/Devices(Enable it to boot)
 ```XML
