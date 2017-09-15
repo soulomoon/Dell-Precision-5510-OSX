@@ -34,13 +34,16 @@ adding node under /System/Library/Extensions/AppleGraphicsControl.kext/Contents/
 <string>none</string>
 
 ```
-## To enable 4K display with HD530(redo after every update)
+## To enable 4K display with HD530(would be disable when updating the system, redo it after every update)
+* !!!attention:(if you want to update your system, you have to add /CLOVER/config.plist/Devices/FakeId back to where it was, then redo the shell command after update, and remove it again)
+
 * run command   
 ```shell
 sudo perl -i.bak -pe 's|\xB8\x01\x00\x00\x00\xF6\xC1\x01\x0F\x85|\x33\xC0\x90\x90\x90\x90\x90\x90\x90\xE9|sg' /System/Library/Frameworks/CoreDisplay.framework/Versions/Current/CoreDisplay
 sudo codesign -f -s - /System/Library/Frameworks/CoreDisplay.framework/Versions/Current/CoreDisplay
 ```
 * remove /CLOVER/config.plist/Devices/FakeId to unlimit hd530 graphic memory
+
 ## To better HWP configuration(you should root to do it)
 * modify  
 `/System/Library/Extensions/IOPlatformPluginFamily.kext/Contents/PlugIns/X86PlatformPlugin.kext/Contents/Resources/Mac-A5C67F76ED83108C.plist`
