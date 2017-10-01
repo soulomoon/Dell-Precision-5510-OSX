@@ -4,6 +4,9 @@
 * This repo is based on
 [darkhand repo](https://github.com/darkhandz/XPS15-9550-Sierra)  
 * [darkhand's old README.md](https://github.com/darkhandz/XPS15-9550-Sierra/tree/fffd216d05be57256c2aac7ddafacb343bad0e69)  
+# Attention!
+* Check if your bios version is 1.2.21
+* You have to go through some steps if you want to boot in version 1.2.21, please check [here](https://github.com/wmchris/DellXPS15-9550-OSX/blob/master/Additional/bios_upgrade.md) 
 # Installation(redo before every update)
 * Add the node under to the CLOVER/config.plist/Devices(Enable it to boot)
 ```XML
