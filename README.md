@@ -18,7 +18,7 @@
 ```
 # AfterInstallation
 ## More kext
-* copy `AfterInstallation/MoreKexts-LE` to `/Library/Extensions/`  
+* copy `AfterInstallation/MoreKexts-LE/LE` to `/Library/Extensions/`  
 * run
 ```shell
 AfterInstallation/MoreKexts-LE/VoodooPS2Daemon/_install.command
