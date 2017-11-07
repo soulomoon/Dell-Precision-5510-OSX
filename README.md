@@ -37,6 +37,10 @@ adding node under /System/Library/Extensions/AppleGraphicsControl.kext/Contents/
 <string>none</string>
 
 ```
+To make it work(you may need repeat it after an system update)
+```shell
+sudo kextcache -u /
+```
 ## To enable 4K display with HD530(would be disable when updating the system, redo it after every update)
 * !!!attention:(if you want to update your system, you have to add /CLOVER/config.plist/Devices/FakeId back to where it was, then redo the shell command after update, and remove it again)
 
