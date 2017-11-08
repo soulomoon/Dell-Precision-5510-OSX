@@ -61,7 +61,7 @@ to be the same as
 sudo touch /System/Library/Extensions && sudo kextcache -u /
 ```
 
-## BackLight Saving(This solution is deprecated in 10.12.6, and fix is unknown)
+## BackLight Saving(This solution is invalid in 10.12.6, and the fix is unknown)
 see  
 [Laptop backlight control using AppleBacklightInjector.kext](https://www.tonymacx86.com/threads/guide-laptop-backlight-control-using-applebacklightinjector-kext.218222/)    
 **Saving and restoring backlight level across restarts**  
