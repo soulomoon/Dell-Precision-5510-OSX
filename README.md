@@ -25,9 +25,7 @@ AfterInstallation/MoreKexts-LE/VoodooPS2Daemon/_install.command
 ```  
 * run command to rebuild the whole kextcache  
 ```shell
-sudo rm -rf /System/Library/Caches/com.apple.kext.caches/Startup/kernelcache
-sudo rm -rf /System/Library/PrelinkedKernels/prelinkedkernel
-sudo touch /System/Library/Extensions && sudo kextcache -u /
+sudo kextcache -u /
 ```
 
 ## Enable HDMI  
@@ -54,7 +52,7 @@ to be the same as
 `AfterInstallation/Mac-A5C67F76ED83108C.plist`  
 * run command to rebuild kextcache  
 ```shell
-sudo touch /System/Library/Extensions && sudo kextcache -u /
+sudo kextcache -u /
 ```
 
 ## BackLight Saving
