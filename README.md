@@ -1,6 +1,6 @@
 # Dell-Precision-5510-OSX
 * Dell-Precision-5510 i7-6820HQ HD530 16G-DDR4 4k-Screen Sata3-SSD-512G DELL-DW1560  
-* currently on macOS Sierra (Version 10.12.6)
+* currently on macOS Sierra (Version 10.12.6) ([For high sierra, take a look here](https://github.com/scottsanett/M5510-4K-High-Sierra-Installation))
 * This repo is based on
 [darkhand repo](https://github.com/darkhandz/XPS15-9550-Sierra)  
 * [darkhand's old README.md](https://github.com/darkhandz/XPS15-9550-Sierra/tree/fffd216d05be57256c2aac7ddafacb343bad0e69)  
@@ -35,6 +35,10 @@ adding node under /System/Library/Extensions/AppleGraphicsControl.kext/Contents/
 <string>none</string>
 
 ```
+To make it work(you may need repeat it after an system update)
+```shell
+sudo kextcache -u /
+```
 ## To enable 4K display with HD530(would be disable when updating the system, redo it after every update)
 * !!!attention:(if you want to update your system, you have to add /CLOVER/config.plist/Devices/FakeId back to where it was, then redo the shell command after update, and remove it again)
 
@@ -55,10 +59,10 @@ to be the same as
 sudo kextcache -u /
 ```
 
-## BackLight Saving
+## BackLight Saving(This solution is invalid in 10.12.6, and the fix is unknown)
 see  
-[Laptop backlight control using AppleBacklightInjector.kext](https://www.tonymacx86.com/threads/guide-laptop-backlight-control-using-applebacklightinjector-kext.218222/)    
+[Laptop backlight control using AppleBacklightInjector.kext](https://www.tonymacx86.com/threads/guide-laptop-backlight-control-using-applebacklightinjector-kext.218222/)   
+[apple-backlight-injector-brightness-not-saved](https://www.tonymacx86.com/threads/apple-backlight-injector-brightness-not-saved.222952/page-14#post-1516295)  
 **Saving and restoring backlight level across restarts**  
-set `config.plist/SystemParameters/BacklightLevel=0`  
-to prevent clover insert default value, so you can save yours
+You have to turn on Automatically ajust brightness in System Peferences -> Displays
 
