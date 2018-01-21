@@ -59,7 +59,7 @@ to be the same as
 sudo kextcache -u /
 ```
 
-## BackLight Saving(This solution is invalid in 10.12.6, and the fix is unknown)
+## BackLight Saving
 see  
 [Laptop backlight control using AppleBacklightInjector.kext](https://www.tonymacx86.com/threads/guide-laptop-backlight-control-using-applebacklightinjector-kext.218222/)   
 [apple-backlight-injector-brightness-not-saved](https://www.tonymacx86.com/threads/apple-backlight-injector-brightness-not-saved.222952/page-14#post-1516295)  
