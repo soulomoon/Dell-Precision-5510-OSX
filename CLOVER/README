@@ -1,0 +1,7 @@
+# Screen won't frickle after screen wake up
+
+Mirical, it has been the problem since forever. Dig depper if luck.
+
+
+# ig-platform-id
+ig-platform-id have to be set to 0x19160000, maybe fix by hotpatch somewhere, the original rehabman default id was 0x19160000.

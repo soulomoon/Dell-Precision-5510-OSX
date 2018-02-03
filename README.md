@@ -5,8 +5,8 @@
 [darkhand repo](https://github.com/darkhandz/XPS15-9550-Sierra)  
 * [darkhand's old README.md](https://github.com/darkhandz/XPS15-9550-Sierra/tree/fffd216d05be57256c2aac7ddafacb343bad0e69)  
 # Attention!
-* Check if your bios version is 1.2.21
-* You have to go through some steps if you want to boot in version 1.2.25 and above, please check [here](https://github.com/wmchris/DellXPS15-9550-OSX/blob/master/Tutorial_10.12_Step7.md#osx-doesnt-boot-anymore-after-firmware-upgrade-to-1225-or-higher) 
+* Now using OsxAptioFix2Drv-64.efi
+* You have to go through some steps if you want to boot, please check [here](https://github.com/wmchris/DellXPS15-9550-OSX/blob/master/Tutorial_10.12_Step7.md#osx-doesnt-boot-anymore-after-firmware-upgrade-to-1225-or-higher) 
 # Installation(redo before every update)
 * Add the node under to the CLOVER/config.plist/Devices(Enable it to boot)
 ```XML
