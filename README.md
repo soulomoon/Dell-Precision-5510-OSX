@@ -18,6 +18,7 @@
 ```
 # AfterInstallation
 ## More kext
+* NullEthernet.kext is for accessing icloud and app store
 * copy `AfterInstallation/MoreKexts-LE/LE` to `/Library/Extensions/`  
 * run
 ```shell
