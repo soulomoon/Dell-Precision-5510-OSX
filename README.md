@@ -7,7 +7,7 @@
 * Now using AllocFix.efi and OsxAptioFixDrv-64.efi, so that no slide is needed
 * If you wish to use OsxAptioFix2Drv-64.efi OsxAptioFix3Drv-64.efi You have to go through some steps if you want to boot, please check [here](https://github.com/wmchris/DellXPS15-9550-OSX/blob/master/Tutorial_10.12_Step7.md#osx-doesnt-boot-anymore-after-firmware-upgrade-to-1225-or-higher) 
 # Installation(redo before every update)
-* Add the node under to the CLOVER/config.plist/Devices(Enable it to boot)
+* Add the node under to the CLOVER/config.plist/Devices(Enable it to boot)(After full installation, you may remove it again, since this set the memory usage of Intel graphic card to 31m)
 ```XML
  <key>FakeID</key>
  <dict>
