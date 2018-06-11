@@ -687,7 +687,7 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>nv_disable=1 dart=0 brcmfx-country=#a darkwake=no -v</string>
+		<string>nv_disable=1 dart=0 brcmfx-country=#a -v darkwake=8</string>
 		<key>DefaultVolume</key>
 		<string>Macintosh HD</string>
 		<key>Log</key>
@@ -925,6 +925,11 @@
 	</dict>
 	<key>Graphics</key>
 	<dict>
+		<key>EDID</key>
+		<dict>
+			<key>Inject</key>
+			<false/>
+		</dict>
 		<key>Inject</key>
 		<dict>
 			<key>ATI</key>
@@ -932,11 +937,6 @@
 			<key>Intel</key>
 			<true/>
 			<key>NVidia</key>
-			<false/>
-		</dict>
-		<key>EDID</key>
-		<dict>
-			<key>Inject</key>
 			<false/>
 		</dict>
 		<key>ig-platform-id</key>
@@ -1147,10 +1147,14 @@
 	</dict>
 	<key>SystemParameters</key>
 	<dict>
+		<key>ExposeSysVariables</key>
+		<false/>
 		<key>InjectKexts</key>
 		<string>Yes</string>
 		<key>InjectSystemID</key>
 		<true/>
+		<key>NoCaches</key>
+		<false/>
 	</dict>
 </dict>
 </plist>
