@@ -687,7 +687,7 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>nv_disable=1 dart=0 brcmfx-country=#a -v darkwake=8</string>
+		<string>nv_disable=1 dart=0 brcmfx-country=#a -v darkwake=no</string>
 		<key>DefaultVolume</key>
 		<string>Macintosh HD</string>
 		<key>Log</key>
@@ -1147,14 +1147,10 @@
 	</dict>
 	<key>SystemParameters</key>
 	<dict>
-		<key>ExposeSysVariables</key>
-		<false/>
 		<key>InjectKexts</key>
 		<string>Yes</string>
 		<key>InjectSystemID</key>
 		<true/>
-		<key>NoCaches</key>
-		<false/>
 	</dict>
 </dict>
 </plist>
