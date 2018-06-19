@@ -69,12 +69,8 @@
 	<string>Copyright © 2017 VerbStub. All rights reserved.</string>
 	<key>OSBundleLibraries</key>
 	<dict>
-		<key>com.apple.iokit.IOPCIFamily</key>
-		<string>2.9</string>
-		<key>com.apple.kpi.iokit</key>
-		<string>16.6</string>
-		<key>com.apple.kpi.libkern</key>
-		<string>16.6</string>
-	</dict>
-</dict>
-</plist>
+		<key>com.apple<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BuildMachineO
