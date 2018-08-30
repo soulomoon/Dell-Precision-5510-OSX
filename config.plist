@@ -925,6 +925,8 @@
 			<key>NVidia</key>
 			<false/>
 		</dict>
+    <key>ig-platform-id</key>
+		<string>0x19160000</string>
 	</dict>
 	<key>KernelAndKextPatches</key>
 	<dict>
