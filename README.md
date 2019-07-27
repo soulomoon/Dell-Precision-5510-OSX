@@ -14,3 +14,6 @@ Inorder for hdmi to be able to output, you should add
 under `ConfigMap->dict` in `/System/Library/Extensions/AppleGraphicsControl.kext/Contents/PlugIns/AppleGraphicsDevicePolicy.kext/Contents/Info.plist`  
 and rebuild kext cache using 
 `sudo kextcache -i /`  
+
+# Better guide
+Thank for @timrijckaert we have a more detail [guide](https://github.com/timrijckaert/hackintosh-precision-5510)
